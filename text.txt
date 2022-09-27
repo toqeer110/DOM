@@ -1,0 +1,13 @@
+ DOM Manipulation for this doc.
+
+var p = document.createElement('p');
+p.className = 'bio';
+
+var ptext = document.createTextNode('hi i am toqeer.');
+
+p.appendChild(ptext);
+p.style.fontWeight = "bold";
+
+var heading = document.querySelector('.left');
+var anchor = document.querySelector('.btn1');
+heading.insertBefore(p,anchor);
